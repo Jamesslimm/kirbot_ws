@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating dwm1001_visualization.egg-info
+writing dwm1001_visualization.egg-info/PKG-INFO
+writing dependency_links to dwm1001_visualization.egg-info/dependency_links.txt
+writing entry points to dwm1001_visualization.egg-info/entry_points.txt
+writing requirements to dwm1001_visualization.egg-info/requires.txt
+writing top-level names to dwm1001_visualization.egg-info/top_level.txt
+writing manifest file 'dwm1001_visualization.egg-info/SOURCES.txt'
+reading manifest file 'dwm1001_visualization.egg-info/SOURCES.txt'
+writing manifest file 'dwm1001_visualization.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/james/DWM1001_ws/install/dwm1001_visualization/lib/python3.10/site-packages/dwm1001-visualization.egg-link (link to .)
+Installing anchor_visualizer script to /home/james/DWM1001_ws/install/dwm1001_visualization/lib/dwm1001_visualization
+
+Installed /home/james/DWM1001_ws/build/dwm1001_visualization
+running symlink_data
+creating /home/james/DWM1001_ws/install/dwm1001_visualization/share/ament_index/resource_index/packages
+symbolically linking /home/james/DWM1001_ws/build/dwm1001_visualization/resource/dwm1001_visualization -> /home/james/DWM1001_ws/install/dwm1001_visualization/share/ament_index/resource_index/packages
+symbolically linking /home/james/DWM1001_ws/build/dwm1001_visualization/package.xml -> /home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization

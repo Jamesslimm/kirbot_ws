@@ -1,0 +1,301 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d6923170b50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d692327d810>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d692327d810>>, mixin_verb=('build',))
+[0.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.127s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/james/DWM1001_ws'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_driver) by extension 'ros'
+[0.141s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dwm1001_driver' with type 'ros.ament_python' and name 'dwm1001_driver'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_launch) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dwm1001_launch' with type 'ros.ament_cmake' and name 'dwm1001_launch'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_transform) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dwm1001_transform' with type 'ros.ament_python' and name 'dwm1001_transform'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/dwm1001_visualization) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dwm1001_visualization' with type 'ros.ament_python' and name 'dwm1001_visualization'
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.165s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 16 installed packages in /home/james/turtlebot3_ws/install
+[0.166s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 507 installed packages in /opt/ros/humble
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'dwm1001_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/DWM1001_ws/build/dwm1001_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/DWM1001_ws/install/dwm1001_driver', 'merge_install': False, 'path': '/home/james/DWM1001_ws/src/dwm1001_driver', 'symlink_install': True, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'dwm1001_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/DWM1001_ws/build/dwm1001_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/DWM1001_ws/install/dwm1001_launch', 'merge_install': False, 'path': '/home/james/DWM1001_ws/src/dwm1001_launch', 'symlink_install': True, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_transform' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'dwm1001_transform' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/DWM1001_ws/build/dwm1001_transform', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/DWM1001_ws/install/dwm1001_transform', 'merge_install': False, 'path': '/home/james/DWM1001_ws/src/dwm1001_transform', 'symlink_install': True, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'dwm1001_visualization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'dwm1001_visualization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/DWM1001_ws/build/dwm1001_visualization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/DWM1001_ws/install/dwm1001_visualization', 'merge_install': False, 'path': '/home/james/DWM1001_ws/src/dwm1001_visualization', 'symlink_install': True, 'test_result_base': None}
+[0.213s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.214s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.215s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/james/DWM1001_ws/src/dwm1001_driver' with build type 'ament_python'
+[0.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_driver', 'ament_prefix_path')
+[0.217s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/hook/ament_prefix_path.ps1'
+[0.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/hook/ament_prefix_path.dsv'
+[0.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/hook/ament_prefix_path.sh'
+[0.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.228s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/james/DWM1001_ws/src/dwm1001_launch' with build type 'ament_cmake'
+[0.228s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/james/DWM1001_ws/src/dwm1001_launch'
+[0.229s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.229s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.233s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/james/DWM1001_ws/src/dwm1001_transform' with build type 'ament_python'
+[0.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_transform', 'ament_prefix_path')
+[0.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/hook/ament_prefix_path.ps1'
+[0.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/hook/ament_prefix_path.dsv'
+[0.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/hook/ament_prefix_path.sh'
+[0.234s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.234s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.237s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/james/DWM1001_ws/src/dwm1001_visualization' with build type 'ament_python'
+[0.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_visualization', 'ament_prefix_path')
+[0.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/hook/ament_prefix_path.ps1'
+[0.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/hook/ament_prefix_path.dsv'
+[0.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/hook/ament_prefix_path.sh'
+[0.238s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.238s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.393s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/james/DWM1001_ws/src/dwm1001_driver'
+[0.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/DWM1001_ws/build/dwm1001_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/DWM1001_ws/build/dwm1001_launch -- -j20 -l20
+[0.549s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/james/DWM1001_ws/src/dwm1001_transform'
+[0.549s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.549s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.701s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/james/DWM1001_ws/src/dwm1001_visualization'
+[0.701s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.701s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/DWM1001_ws/build/dwm1001_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/DWM1001_ws/build/dwm1001_launch -- -j20 -l20
+[0.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/DWM1001_ws/build/dwm1001_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/DWM1001_ws/build/dwm1001_launch
+[0.790s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dwm1001_launch)
+[0.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/DWM1001_ws/build/dwm1001_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/DWM1001_ws/build/dwm1001_launch
+[0.796s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch' for CMake module files
+[0.796s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch' for CMake config files
+[0.797s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_launch', 'cmake_prefix_path')
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/hook/cmake_prefix_path.ps1'
+[0.798s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/hook/cmake_prefix_path.dsv'
+[0.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/hook/cmake_prefix_path.sh'
+[0.799s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/bin'
+[0.799s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/lib/pkgconfig/dwm1001_launch.pc'
+[0.799s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/lib/python3.10/site-packages'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/bin'
+[0.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.ps1'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.dsv'
+[0.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.sh'
+[0.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.bash'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.zsh'
+[0.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/DWM1001_ws/install/dwm1001_launch/share/colcon-core/packages/dwm1001_launch)
+[0.839s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dwm1001_launch)
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch' for CMake module files
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch' for CMake config files
+[0.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_launch', 'cmake_prefix_path')
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/hook/cmake_prefix_path.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/hook/cmake_prefix_path.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/hook/cmake_prefix_path.sh'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/bin'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/lib/pkgconfig/dwm1001_launch.pc'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/lib/python3.10/site-packages'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_launch/bin'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.ps1'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.dsv'
+[0.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.sh'
+[0.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.bash'
+[0.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.zsh'
+[0.845s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/DWM1001_ws/install/dwm1001_launch/share/colcon-core/packages/dwm1001_launch)
+[1.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/DWM1001_ws/build/dwm1001_visualization': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_visualization/build --no-deps symlink_data
+[1.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/DWM1001_ws/build/dwm1001_driver': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_driver/build --no-deps symlink_data
+[1.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/DWM1001_ws/build/dwm1001_transform': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_transform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_transform/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_transform/build --no-deps symlink_data
+[1.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_driver', 'pythonpath_develop')
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/build/dwm1001_driver/share/dwm1001_driver/hook/pythonpath_develop.ps1'
+[1.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/DWM1001_ws/build/dwm1001_driver' returned '0': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_driver/build --no-deps symlink_data
+[1.768s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/build/dwm1001_driver/share/dwm1001_driver/hook/pythonpath_develop.dsv'
+[1.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/build/dwm1001_driver/share/dwm1001_driver/hook/pythonpath_develop.sh'
+[1.769s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_driver' for CMake module files
+[1.769s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_driver' for CMake config files
+[1.770s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_driver/lib'
+[1.770s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_driver/bin'
+[1.770s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_driver/lib/pkgconfig/dwm1001_driver.pc'
+[1.770s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_driver/lib/python3.10/site-packages'
+[1.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_driver', 'pythonpath')
+[1.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/hook/pythonpath.ps1'
+[1.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/hook/pythonpath.dsv'
+[1.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/hook/pythonpath.sh'
+[1.771s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_driver/bin'
+[1.771s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dwm1001_driver)
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/package.ps1'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/package.dsv'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/package.sh'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/package.bash'
+[1.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_driver/share/dwm1001_driver/package.zsh'
+[1.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/DWM1001_ws/install/dwm1001_driver/share/colcon-core/packages/dwm1001_driver)
+[1.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_transform', 'pythonpath_develop')
+[1.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/build/dwm1001_transform/share/dwm1001_transform/hook/pythonpath_develop.ps1'
+[1.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/build/dwm1001_transform/share/dwm1001_transform/hook/pythonpath_develop.dsv'
+[1.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/build/dwm1001_transform/share/dwm1001_transform/hook/pythonpath_develop.sh'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_transform' for CMake module files
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_transform' for CMake config files
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_transform/lib'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_transform/bin'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_transform/lib/pkgconfig/dwm1001_transform.pc'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_transform/lib/python3.10/site-packages'
+[1.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_transform', 'pythonpath')
+[1.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/hook/pythonpath.ps1'
+[1.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/hook/pythonpath.dsv'
+[1.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/DWM1001_ws/build/dwm1001_transform' returned '0': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_transform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_transform/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_transform/build --no-deps symlink_data
+[1.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/hook/pythonpath.sh'
+[1.779s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_transform/bin'
+[1.779s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dwm1001_transform)
+[1.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/package.ps1'
+[1.780s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/package.dsv'
+[1.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/package.sh'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/package.bash'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_transform/share/dwm1001_transform/package.zsh'
+[1.781s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/DWM1001_ws/install/dwm1001_transform/share/colcon-core/packages/dwm1001_transform)
+[1.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_visualization', 'pythonpath_develop')
+[1.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/build/dwm1001_visualization/share/dwm1001_visualization/hook/pythonpath_develop.ps1'
+[1.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/build/dwm1001_visualization/share/dwm1001_visualization/hook/pythonpath_develop.dsv'
+[1.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/DWM1001_ws/build/dwm1001_visualization' returned '0': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_visualization/build --no-deps symlink_data
+[1.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/build/dwm1001_visualization/share/dwm1001_visualization/hook/pythonpath_develop.sh'
+[1.784s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_visualization' for CMake module files
+[1.784s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_visualization' for CMake config files
+[1.784s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_visualization/lib'
+[1.784s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_visualization/bin'
+[1.785s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_visualization/lib/pkgconfig/dwm1001_visualization.pc'
+[1.785s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_visualization/lib/python3.10/site-packages'
+[1.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('dwm1001_visualization', 'pythonpath')
+[1.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/hook/pythonpath.ps1'
+[1.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/hook/pythonpath.dsv'
+[1.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/hook/pythonpath.sh'
+[1.786s] Level 1:colcon.colcon_core.environment:checking '/home/james/DWM1001_ws/install/dwm1001_visualization/bin'
+[1.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dwm1001_visualization)
+[1.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/package.ps1'
+[1.787s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/package.dsv'
+[1.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/package.sh'
+[1.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/package.bash'
+[1.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/DWM1001_ws/install/dwm1001_visualization/share/dwm1001_visualization/package.zsh'
+[1.788s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/DWM1001_ws/install/dwm1001_visualization/share/colcon-core/packages/dwm1001_visualization)
+[1.788s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.789s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.789s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.789s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.794s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.794s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.794s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.817s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.817s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/DWM1001_ws/install/local_setup.ps1'
+[1.819s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/james/DWM1001_ws/install/_local_setup_util_ps1.py'
+[1.820s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/DWM1001_ws/install/setup.ps1'
+[1.822s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/DWM1001_ws/install/local_setup.sh'
+[1.823s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/james/DWM1001_ws/install/_local_setup_util_sh.py'
+[1.824s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/DWM1001_ws/install/setup.sh'
+[1.825s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/DWM1001_ws/install/local_setup.bash'
+[1.826s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/DWM1001_ws/install/setup.bash'
+[1.827s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/DWM1001_ws/install/local_setup.zsh'
+[1.828s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/DWM1001_ws/install/setup.zsh'

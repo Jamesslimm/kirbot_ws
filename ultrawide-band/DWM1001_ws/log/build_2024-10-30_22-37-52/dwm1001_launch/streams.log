@@ -1,0 +1,26 @@
+[0.172s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/DWM1001_ws/install/dwm1001_visualization:/home/james/DWM1001_ws/install/dwm1001_transform:/home/james/DWM1001_ws/install/dwm1001_driver:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/DWM1001_ws/build/dwm1001_launch -- -j20 -l20
+[0.477s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/DWM1001_ws/install/dwm1001_visualization:/home/james/DWM1001_ws/install/dwm1001_transform:/home/james/DWM1001_ws/install/dwm1001_driver:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/DWM1001_ws/build/dwm1001_launch -- -j20 -l20
+[0.514s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/DWM1001_ws/install/dwm1001_visualization:/home/james/DWM1001_ws/install/dwm1001_transform:/home/james/DWM1001_ws/install/dwm1001_driver:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/DWM1001_ws/build/dwm1001_launch
+[0.524s] -- Install configuration: ""
+[0.524s] -- Execute custom install script
+[0.525s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/launch/active_node.launch.py
+[0.525s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/launch/passive_node.launch.py
+[0.525s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/launch/transform_node.launch.py
+[0.525s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/config/default_active.yaml
+[0.525s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/config/default_passive.yaml
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/ament_index/resource_index/package_run_dependencies/dwm1001_launch
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/ament_index/resource_index/parent_prefix_path/dwm1001_launch
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/ament_prefix_path.sh
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/ament_prefix_path.dsv
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/path.sh
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/path.dsv
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.bash
+[0.526s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.sh
+[0.527s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.zsh
+[0.527s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.dsv
+[0.527s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.dsv
+[0.538s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/ament_index/resource_index/packages/dwm1001_launch
+[0.539s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/cmake/dwm1001_launchConfig.cmake
+[0.539s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/cmake/dwm1001_launchConfig-version.cmake
+[0.539s] -- Up-to-date symlink: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.xml
+[0.541s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/DWM1001_ws/install/dwm1001_visualization:/home/james/DWM1001_ws/install/dwm1001_transform:/home/james/DWM1001_ws/install/dwm1001_driver:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/DWM1001_ws/build/dwm1001_launch

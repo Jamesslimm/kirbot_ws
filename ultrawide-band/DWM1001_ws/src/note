@@ -1,0 +1,16 @@
+1. Start node 
+
+- If UWB plug into pc is an active node
+ros2 launch dwm1001_launch active_node.launch.py
+
+- If UWB plug into pc is an passive node
+ros2 launch dwm1001_launch passive_node.launch.py
+
+
+2. To visualize in rviz2
+- Ensure that the fixed frame is set to "maps"
+ros2 run dwm1001_visualization anchor_visualizer --ros-args -p initiator_anchor_position:="0.0,0.0,0.0" -p anchor_positions:="2.24,0.0,0.0;1.58,1.93,0.0"
+
+
+3. Publish coordinates as waypoints
+run follow_waypoints.py

@@ -1,0 +1,52 @@
+[0.164s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake /home/james/DWM1001_ws/src/dwm1001_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/james/DWM1001_ws/install/dwm1001_launch
+[0.326s] -- The C compiler identification is GNU 11.4.0
+[0.399s] -- The CXX compiler identification is GNU 11.4.0
+[0.410s] -- Detecting C compiler ABI info
+[0.473s] -- Detecting C compiler ABI info - done
+[0.481s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.482s] -- Detecting C compile features
+[0.483s] -- Detecting C compile features - done
+[0.487s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.571s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.571s] -- Detecting CXX compile features
+[0.572s] -- Detecting CXX compile features - done
+[0.576s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.928s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.994s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.044s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.138s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.140s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.140s] -- Added test 'lint_cmake' to check CMake code style
+[1.141s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.142s] -- Added test 'xmllint' to check XML markup files
+[1.144s] -- Configuring done
+[1.146s] -- Generating done
+[1.146s] -- Build files have been written to: /home/james/DWM1001_ws/build/dwm1001_launch
+[1.152s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake /home/james/DWM1001_ws/src/dwm1001_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/james/DWM1001_ws/install/dwm1001_launch
+[1.152s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/DWM1001_ws/build/dwm1001_launch -- -j20 -l20
+[1.193s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/DWM1001_ws/build/dwm1001_launch -- -j20 -l20
+[1.231s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/DWM1001_ws/build/dwm1001_launch
+[1.238s] -- Install configuration: ""
+[1.238s] -- Execute custom install script
+[1.239s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/launch/active_node.launch.py
+[1.248s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/launch/passive_node.launch.py
+[1.255s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/launch/transform_node.launch.py
+[1.263s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/config/default_active.yaml
+[1.273s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/config/default_passive.yaml
+[1.283s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/ament_index/resource_index/package_run_dependencies/dwm1001_launch
+[1.291s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/ament_index/resource_index/parent_prefix_path/dwm1001_launch
+[1.301s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/ament_prefix_path.sh
+[1.309s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/ament_prefix_path.dsv
+[1.319s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/path.sh
+[1.327s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/environment/path.dsv
+[1.337s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.bash
+[1.346s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.sh
+[1.354s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.zsh
+[1.365s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/local_setup.dsv
+[1.373s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.dsv
+[1.383s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/ament_index/resource_index/packages/dwm1001_launch
+[1.390s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/cmake/dwm1001_launchConfig.cmake
+[1.401s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/cmake/dwm1001_launchConfig-version.cmake
+[1.409s] -- Symlinking: /home/james/DWM1001_ws/install/dwm1001_launch/share/dwm1001_launch/package.xml
+[1.420s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/DWM1001_ws/build/dwm1001_launch

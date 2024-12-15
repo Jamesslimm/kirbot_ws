@@ -1,0 +1,35 @@
+[1.046s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_driver': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_driver/build --no-deps symlink_data
+[1.168s] /home/james/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.168s]   warnings.warn(msg)
+[1.297s] running develop
+[1.298s] /home/james/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.298s] !!
+[1.298s] 
+[1.298s]         ********************************************************************************
+[1.298s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.298s]         Instead, use pypa/build, pypa/installer or other
+[1.298s]         standards-based tools.
+[1.298s] 
+[1.298s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.298s]         ********************************************************************************
+[1.298s] 
+[1.298s] !!
+[1.298s]   easy_install.initialize_options(self)
+[1.470s] running egg_info
+[1.482s] writing dwm1001_driver.egg-info/PKG-INFO
+[1.483s] writing dependency_links to dwm1001_driver.egg-info/dependency_links.txt
+[1.483s] writing entry points to dwm1001_driver.egg-info/entry_points.txt
+[1.483s] writing requirements to dwm1001_driver.egg-info/requires.txt
+[1.483s] writing top-level names to dwm1001_driver.egg-info/top_level.txt
+[1.507s] reading manifest file 'dwm1001_driver.egg-info/SOURCES.txt'
+[1.508s] writing manifest file 'dwm1001_driver.egg-info/SOURCES.txt'
+[1.520s] running build_ext
+[1.521s] Creating /home/james/DWM1001_ws/install/dwm1001_driver/lib/python3.10/site-packages/dwm1001-driver.egg-link (link to .)
+[1.521s] Installing active_tag script to /home/james/DWM1001_ws/install/dwm1001_driver/lib/dwm1001_driver
+[1.522s] Installing dummy_active_tag script to /home/james/DWM1001_ws/install/dwm1001_driver/lib/dwm1001_driver
+[1.522s] Installing dummy_passive_tag script to /home/james/DWM1001_ws/install/dwm1001_driver/lib/dwm1001_driver
+[1.522s] Installing passive_tag script to /home/james/DWM1001_ws/install/dwm1001_driver/lib/dwm1001_driver
+[1.522s] 
+[1.522s] Installed /home/james/DWM1001_ws/build/dwm1001_driver
+[1.522s] running symlink_data
+[1.552s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_driver' returned '0': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_driver/build --no-deps symlink_data

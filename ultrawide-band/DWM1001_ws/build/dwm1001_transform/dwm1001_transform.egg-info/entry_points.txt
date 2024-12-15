@@ -1,0 +1,2 @@
+[console_scripts]
+dwm1001_transform = dwm1001_transform.dwm1001_transform_node:main

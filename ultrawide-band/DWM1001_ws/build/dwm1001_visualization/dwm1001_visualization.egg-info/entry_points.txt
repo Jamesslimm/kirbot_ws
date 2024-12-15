@@ -1,0 +1,2 @@
+[console_scripts]
+anchor_visualizer = dwm1001_visualization.anchor_visualizer_node:main

@@ -1,0 +1,32 @@
+[1.029s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_transform': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_transform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_transform/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_transform/build --no-deps symlink_data
+[1.157s] /home/james/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.157s]   warnings.warn(msg)
+[1.285s] running develop
+[1.285s] /home/james/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.285s] !!
+[1.285s] 
+[1.285s]         ********************************************************************************
+[1.286s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.286s]         Instead, use pypa/build, pypa/installer or other
+[1.286s]         standards-based tools.
+[1.286s] 
+[1.286s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.286s]         ********************************************************************************
+[1.286s] 
+[1.286s] !!
+[1.286s]   easy_install.initialize_options(self)
+[1.452s] running egg_info
+[1.466s] writing dwm1001_transform.egg-info/PKG-INFO
+[1.466s] writing dependency_links to dwm1001_transform.egg-info/dependency_links.txt
+[1.466s] writing entry points to dwm1001_transform.egg-info/entry_points.txt
+[1.466s] writing requirements to dwm1001_transform.egg-info/requires.txt
+[1.466s] writing top-level names to dwm1001_transform.egg-info/top_level.txt
+[1.489s] reading manifest file 'dwm1001_transform.egg-info/SOURCES.txt'
+[1.492s] writing manifest file 'dwm1001_transform.egg-info/SOURCES.txt'
+[1.505s] running build_ext
+[1.505s] Creating /home/james/DWM1001_ws/install/dwm1001_transform/lib/python3.10/site-packages/dwm1001-transform.egg-link (link to .)
+[1.506s] Installing dwm1001_transform script to /home/james/DWM1001_ws/install/dwm1001_transform/lib/dwm1001_transform
+[1.506s] 
+[1.506s] Installed /home/james/DWM1001_ws/build/dwm1001_transform
+[1.506s] running symlink_data
+[1.546s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_transform' returned '0': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_transform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_transform/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_transform/build --no-deps symlink_data

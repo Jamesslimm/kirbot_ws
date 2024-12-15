@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dwm1001_transform
+Version: 0.1.0
+Summary: ROS 2 package for transforming points from the dwm1001 frame to the map frame
+Maintainer: Adam Morrissett
+Maintainer-email: morrissettal2@vcu.edu
+License: Apache License 2.0
+Requires-Dist: setuptools

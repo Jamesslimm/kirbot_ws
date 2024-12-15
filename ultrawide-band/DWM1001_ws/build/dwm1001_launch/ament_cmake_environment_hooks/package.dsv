@@ -1,0 +1,4 @@
+source;share/dwm1001_launch/local_setup.bash
+source;share/dwm1001_launch/local_setup.dsv
+source;share/dwm1001_launch/local_setup.sh
+source;share/dwm1001_launch/local_setup.zsh

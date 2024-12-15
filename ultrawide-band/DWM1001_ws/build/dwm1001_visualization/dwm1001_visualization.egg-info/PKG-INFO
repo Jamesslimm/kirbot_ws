@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dwm1001_visualization
+Version: 0.1.0
+Summary: ROS 2 package for visualizing DWM1001 network components
+Maintainer: Adam Morrissett
+Maintainer-email: morrissettal2@vcu.edu
+License: Apache License 2.0
+Requires-Dist: setuptools

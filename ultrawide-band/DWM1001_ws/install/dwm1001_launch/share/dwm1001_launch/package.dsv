@@ -1,0 +1,8 @@
+source;share/dwm1001_launch/hook/cmake_prefix_path.ps1
+source;share/dwm1001_launch/hook/cmake_prefix_path.dsv
+source;share/dwm1001_launch/hook/cmake_prefix_path.sh
+source;share/dwm1001_launch/local_setup.bash
+source;share/dwm1001_launch/local_setup.dsv
+source;share/dwm1001_launch/local_setup.ps1
+source;share/dwm1001_launch/local_setup.sh
+source;share/dwm1001_launch/local_setup.zsh

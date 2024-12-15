@@ -1,0 +1,32 @@
+[1.022s] Invoking command in '/home/james/DWM1001_ws/build/dwm1001_visualization': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_visualization/build --no-deps symlink_data
+[1.144s] /home/james/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.144s]   warnings.warn(msg)
+[1.275s] running develop
+[1.275s] /home/james/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.275s] !!
+[1.275s] 
+[1.275s]         ********************************************************************************
+[1.275s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.275s]         Instead, use pypa/build, pypa/installer or other
+[1.275s]         standards-based tools.
+[1.275s] 
+[1.275s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.275s]         ********************************************************************************
+[1.276s] 
+[1.276s] !!
+[1.276s]   easy_install.initialize_options(self)
+[1.448s] running egg_info
+[1.461s] writing dwm1001_visualization.egg-info/PKG-INFO
+[1.461s] writing dependency_links to dwm1001_visualization.egg-info/dependency_links.txt
+[1.461s] writing entry points to dwm1001_visualization.egg-info/entry_points.txt
+[1.461s] writing requirements to dwm1001_visualization.egg-info/requires.txt
+[1.461s] writing top-level names to dwm1001_visualization.egg-info/top_level.txt
+[1.485s] reading manifest file 'dwm1001_visualization.egg-info/SOURCES.txt'
+[1.487s] writing manifest file 'dwm1001_visualization.egg-info/SOURCES.txt'
+[1.500s] running build_ext
+[1.500s] Creating /home/james/DWM1001_ws/install/dwm1001_visualization/lib/python3.10/site-packages/dwm1001-visualization.egg-link (link to .)
+[1.501s] Installing anchor_visualizer script to /home/james/DWM1001_ws/install/dwm1001_visualization/lib/dwm1001_visualization
+[1.502s] 
+[1.502s] Installed /home/james/DWM1001_ws/build/dwm1001_visualization
+[1.502s] running symlink_data
+[1.545s] Invoked command in '/home/james/DWM1001_ws/build/dwm1001_visualization' returned '0': PYTHONPATH=/home/james/DWM1001_ws/build/dwm1001_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/DWM1001_ws/install/dwm1001_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/DWM1001_ws/build/dwm1001_visualization/build --no-deps symlink_data

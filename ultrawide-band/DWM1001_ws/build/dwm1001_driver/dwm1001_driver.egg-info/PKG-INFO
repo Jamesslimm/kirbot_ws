@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dwm1001_driver
+Version: 0.1.2
+Summary: ROS 2 driver package for Qorvo (previously Decawave) DWM1001
+Maintainer: Adam Morrissett
+Maintainer-email: morrissettal2@vcu.edu
+License: Apache License 2.0
+Requires-Dist: setuptools
