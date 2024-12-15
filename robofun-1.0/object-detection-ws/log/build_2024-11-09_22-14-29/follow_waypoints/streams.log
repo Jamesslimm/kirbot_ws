@@ -1,0 +1,33 @@
+[1.140s] Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/build --no-deps symlink_data
+[1.357s] /home/james/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.357s]   warnings.warn(msg)
+[1.570s] running develop
+[1.571s] /home/james/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.572s] !!
+[1.572s] 
+[1.572s]         ********************************************************************************
+[1.572s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.572s]         Instead, use pypa/build, pypa/installer or other
+[1.572s]         standards-based tools.
+[1.572s] 
+[1.572s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.573s]         ********************************************************************************
+[1.573s] 
+[1.573s] !!
+[1.573s]   easy_install.initialize_options(self)
+[1.858s] running egg_info
+[1.880s] writing follow_waypoints.egg-info/PKG-INFO
+[1.881s] writing dependency_links to follow_waypoints.egg-info/dependency_links.txt
+[1.881s] writing entry points to follow_waypoints.egg-info/entry_points.txt
+[1.881s] writing requirements to follow_waypoints.egg-info/requires.txt
+[1.881s] writing top-level names to follow_waypoints.egg-info/top_level.txt
+[1.925s] reading manifest file 'follow_waypoints.egg-info/SOURCES.txt'
+[1.927s] writing manifest file 'follow_waypoints.egg-info/SOURCES.txt'
+[1.949s] running build_ext
+[1.949s] Creating /home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/python3.10/site-packages/follow-waypoints.egg-link (link to .)
+[1.950s] Installing follow_waypoints_exe script to /home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/follow_waypoints
+[1.950s] Installing follow_waypoints_uwb script to /home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/follow_waypoints
+[1.951s] 
+[1.951s] Installed /home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints
+[1.951s] running symlink_data
+[1.995s] Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints' returned '0': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/build --no-deps symlink_data

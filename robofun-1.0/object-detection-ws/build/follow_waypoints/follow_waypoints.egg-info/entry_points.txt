@@ -1,0 +1,3 @@
+[console_scripts]
+follow_waypoints_exe = follow_waypoints.follow_waypoints:main
+follow_waypoints_uwb = follow_waypoints.follow_waypoints_uwb:main

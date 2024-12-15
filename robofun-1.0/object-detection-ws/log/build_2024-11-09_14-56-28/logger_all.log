@@ -1,0 +1,422 @@
+[0.095s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.095s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d46051752d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d460527e020>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d460527e020>>, mixin_verb=('build',))
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.138s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/james/workspace/robofun-1.0/object-detection-ws'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ros'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['cmake', 'python']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'cmake'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['python_setup_py']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python_setup_py'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(models/yolov8n_openvino_model) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/follow_waypoints) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/follow_waypoints' with type 'ros.ament_python' and name 'follow_waypoints'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_detection' with type 'ros.ament_python' and name 'object_detection'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_detection_msgs) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_detection_msgs' with type 'ros.ament_cmake' and name 'object_detection_msgs'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolobot_recognition) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolobot_recognition' with type 'ros.ament_cmake' and name 'yolobot_recognition'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolov8_msgs' with type 'ros.ament_cmake' and name 'yolov8_msgs'
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.179s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/james/workspace/robofun-1.0/object-detection-ws/install
+[0.179s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 16 installed packages in /home/james/turtlebot3_ws/install
+[0.181s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 507 installed packages in /opt/ros/humble
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'cmake_target' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'cmake_clean_cache' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'cmake_clean_first' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'cmake_force_configure' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'ament_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'catkin_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'follow_waypoints' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.235s] DEBUG:colcon.colcon_core.verb:Building package 'follow_waypoints' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints', 'merge_install': False, 'path': '/home/james/workspace/robofun-1.0/object-detection-ws/src/follow_waypoints', 'symlink_install': True, 'test_result_base': None}
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_target' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_clean_cache' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_clean_first' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'cmake_force_configure' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'ament_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'catkin_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'object_detection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.235s] DEBUG:colcon.colcon_core.verb:Building package 'object_detection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection', 'merge_install': False, 'path': '/home/james/workspace/robofun-1.0/object-detection-ws/src/object_detection', 'symlink_install': True, 'test_result_base': None}
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'cmake_target' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'object_detection_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.236s] DEBUG:colcon.colcon_core.verb:Building package 'object_detection_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs', 'merge_install': False, 'path': '/home/james/workspace/robofun-1.0/object-detection-ws/src/object_detection_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_target' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_clean_cache' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_clean_first' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'cmake_force_configure' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'ament_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'catkin_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolobot_recognition' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.236s] DEBUG:colcon.colcon_core.verb:Building package 'yolobot_recognition' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition', 'merge_install': False, 'path': '/home/james/workspace/robofun-1.0/object-detection-ws/src/yolobot_recognition', 'symlink_install': True, 'test_result_base': None}
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_target' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.236s] DEBUG:colcon.colcon_core.verb:Building package 'yolov8_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs', 'merge_install': False, 'path': '/home/james/workspace/robofun-1.0/object-detection-ws/src/yolov8_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.236s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.237s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.237s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/follow_waypoints' with build type 'ament_python'
+[0.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('follow_waypoints', 'ament_prefix_path')
+[0.240s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/hook/ament_prefix_path.ps1'
+[0.241s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/hook/ament_prefix_path.dsv'
+[0.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/hook/ament_prefix_path.sh'
+[0.243s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.243s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.247s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/object_detection' with build type 'ament_python'
+[0.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection', 'ament_prefix_path')
+[0.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/hook/ament_prefix_path.ps1'
+[0.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/hook/ament_prefix_path.dsv'
+[0.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/hook/ament_prefix_path.sh'
+[0.248s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.254s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/object_detection_msgs' with build type 'ament_cmake'
+[0.254s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/object_detection_msgs'
+[0.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/yolobot_recognition' with build type 'ament_cmake'
+[0.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/yolobot_recognition'
+[0.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.265s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/yolov8_msgs' with build type 'ament_cmake'
+[0.265s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/yolov8_msgs'
+[0.265s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.265s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.435s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/follow_waypoints'
+[0.435s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.435s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.595s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/james/workspace/robofun-1.0/object-detection-ws/src/object_detection'
+[0.596s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.596s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs -- -j20 -l20
+[0.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition -- -j20 -l20
+[0.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs -- -j20 -l20
+[0.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition -- -j20 -l20
+[0.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition
+[0.775s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_recognition)
+[0.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition
+[0.784s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition' for CMake module files
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition' for CMake config files
+[0.787s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_recognition', 'cmake_prefix_path')
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.ps1'
+[0.788s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.dsv'
+[0.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.sh'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib'
+[0.790s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/bin'
+[0.790s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib/pkgconfig/yolobot_recognition.pc'
+[0.790s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib/python3.10/site-packages'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/bin'
+[0.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.ps1'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.dsv'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.sh'
+[0.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.bash'
+[0.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.zsh'
+[0.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/colcon-core/packages/yolobot_recognition)
+[0.841s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolobot_recognition)
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition' for CMake module files
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition' for CMake config files
+[0.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolobot_recognition', 'cmake_prefix_path')
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.ps1'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/hook/cmake_prefix_path.sh'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/bin'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib/pkgconfig/yolobot_recognition.pc'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib/python3.10/site-packages'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/bin'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.dsv'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.sh'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.bash'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.zsh'
+[0.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/colcon-core/packages/yolobot_recognition)
+[1.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs -- -j20 -l20
+[1.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs -- -j20 -l20
+[1.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs
+[1.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs
+[1.320s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_detection_msgs)
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs' for CMake module files
+[1.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs
+[1.323s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs' for CMake config files
+[1.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection_msgs', 'cmake_prefix_path')
+[1.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/cmake_prefix_path.ps1'
+[1.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/cmake_prefix_path.dsv'
+[1.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/cmake_prefix_path.sh'
+[1.326s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib'
+[1.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection_msgs', 'ld_library_path_lib')
+[1.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/ld_library_path_lib.ps1'
+[1.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/ld_library_path_lib.dsv'
+[1.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/ld_library_path_lib.sh'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/bin'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/pkgconfig/object_detection_msgs.pc'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/python3.10/site-packages'
+[1.330s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/bin'
+[1.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.ps1'
+[1.331s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.dsv'
+[1.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.sh'
+[1.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.bash'
+[1.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.zsh'
+[1.332s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/colcon-core/packages/object_detection_msgs)
+[1.335s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_msgs)
+[1.335s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs' for CMake module files
+[1.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs' for CMake config files
+[1.337s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'cmake_prefix_path')
+[1.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.ps1'
+[1.338s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.dsv'
+[1.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.sh'
+[1.339s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/lib'
+[1.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'ld_library_path_lib')
+[1.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.ps1'
+[1.340s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.dsv'
+[1.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.sh'
+[1.341s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/bin'
+[1.341s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/lib/pkgconfig/yolov8_msgs.pc'
+[1.341s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/lib/python3.10/site-packages'
+[1.341s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/bin'
+[1.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.ps1'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.sh'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.bash'
+[1.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.zsh'
+[1.343s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/colcon-core/packages/yolov8_msgs)
+[1.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/build --no-deps symlink_data
+[1.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/build --no-deps symlink_data
+[1.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_detection_msgs)
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs' for CMake module files
+[1.447s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs' for CMake config files
+[1.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection_msgs', 'cmake_prefix_path')
+[1.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/cmake_prefix_path.ps1'
+[1.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/cmake_prefix_path.dsv'
+[1.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/cmake_prefix_path.sh'
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib'
+[1.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection_msgs', 'ld_library_path_lib')
+[1.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/ld_library_path_lib.ps1'
+[1.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/ld_library_path_lib.dsv'
+[1.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/hook/ld_library_path_lib.sh'
+[1.451s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/bin'
+[1.451s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/pkgconfig/object_detection_msgs.pc'
+[1.451s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/python3.10/site-packages'
+[1.452s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/bin'
+[1.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.ps1'
+[1.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.dsv'
+[1.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.sh'
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.bash'
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.zsh'
+[1.454s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/colcon-core/packages/object_detection_msgs)
+[1.455s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_msgs)
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs' for CMake module files
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs' for CMake config files
+[1.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'cmake_prefix_path')
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.ps1'
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.dsv'
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.sh'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/lib'
+[1.459s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'ld_library_path_lib')
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.ps1'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.dsv'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.sh'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/bin'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/lib/pkgconfig/yolov8_msgs.pc'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/lib/python3.10/site-packages'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/bin'
+[1.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.ps1'
+[1.461s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv'
+[1.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.sh'
+[1.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.bash'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/yolov8_msgs/package.zsh'
+[1.463s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/yolov8_msgs/share/colcon-core/packages/yolov8_msgs)
+[1.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('follow_waypoints', 'pythonpath_develop')
+[1.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/share/follow_waypoints/hook/pythonpath_develop.ps1'
+[1.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints' returned '0': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/build --no-deps symlink_data
+[1.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/share/follow_waypoints/hook/pythonpath_develop.dsv'
+[1.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/build/follow_waypoints/share/follow_waypoints/hook/pythonpath_develop.sh'
+[1.911s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints' for CMake module files
+[1.911s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints' for CMake config files
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib'
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/bin'
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/pkgconfig/follow_waypoints.pc'
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/lib/python3.10/site-packages'
+[1.912s] Level 1:colcon.colcon_core.shell:create_environment_hook('follow_waypoints', 'pythonpath')
+[1.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/hook/pythonpath.ps1'
+[1.913s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/hook/pythonpath.dsv'
+[1.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/hook/pythonpath.sh'
+[1.913s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/bin'
+[1.913s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(follow_waypoints)
+[1.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/package.ps1'
+[1.914s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/package.dsv'
+[1.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/package.sh'
+[1.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/package.bash'
+[1.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/follow_waypoints/package.zsh'
+[1.915s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/follow_waypoints/share/colcon-core/packages/follow_waypoints)
+[1.916s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection', 'pythonpath_develop')
+[1.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/share/object_detection/hook/pythonpath_develop.ps1'
+[1.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection' returned '0': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/build --no-deps symlink_data
+[1.918s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/share/object_detection/hook/pythonpath_develop.dsv'
+[1.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/share/object_detection/hook/pythonpath_develop.sh'
+[1.918s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection' for CMake module files
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection' for CMake config files
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib'
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/bin'
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/pkgconfig/object_detection.pc'
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/python3.10/site-packages'
+[1.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_detection', 'pythonpath')
+[1.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/hook/pythonpath.ps1'
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/hook/pythonpath.dsv'
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/hook/pythonpath.sh'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/bin'
+[1.921s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_detection)
+[1.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/package.ps1'
+[1.921s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/package.dsv'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/package.sh'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/package.bash'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/object_detection/package.zsh'
+[1.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/share/colcon-core/packages/object_detection)
+[1.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.923s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.928s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.929s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.929s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.942s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.943s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/workspace/robofun-1.0/object-detection-ws/install/local_setup.ps1'
+[1.944s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/james/workspace/robofun-1.0/object-detection-ws/install/_local_setup_util_ps1.py'
+[1.946s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/workspace/robofun-1.0/object-detection-ws/install/setup.ps1'
+[1.948s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/workspace/robofun-1.0/object-detection-ws/install/local_setup.sh'
+[1.949s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/james/workspace/robofun-1.0/object-detection-ws/install/_local_setup_util_sh.py'
+[1.949s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/workspace/robofun-1.0/object-detection-ws/install/setup.sh'
+[1.951s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/workspace/robofun-1.0/object-detection-ws/install/local_setup.bash'
+[1.952s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/workspace/robofun-1.0/object-detection-ws/install/setup.bash'
+[1.954s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/james/workspace/robofun-1.0/object-detection-ws/install/local_setup.zsh'
+[1.954s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/james/workspace/robofun-1.0/object-detection-ws/install/setup.zsh'

@@ -1,0 +1,1 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs/ament_cmake_core/yolov8_msgsConfig-version.cmake

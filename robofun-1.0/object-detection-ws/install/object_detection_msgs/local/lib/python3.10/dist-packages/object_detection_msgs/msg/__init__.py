@@ -1,0 +1,1 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs/rosidl_generator_py/object_detection_msgs/msg/__init__.py

@@ -1,0 +1,1 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

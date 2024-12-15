@@ -1,0 +1,32 @@
+[1.099s] Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/build --no-deps symlink_data
+[1.265s] /home/james/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.265s]   warnings.warn(msg)
+[1.408s] running develop
+[1.409s] /home/james/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.409s] !!
+[1.409s] 
+[1.409s]         ********************************************************************************
+[1.409s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.409s]         Instead, use pypa/build, pypa/installer or other
+[1.409s]         standards-based tools.
+[1.410s] 
+[1.410s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.410s]         ********************************************************************************
+[1.410s] 
+[1.410s] !!
+[1.410s]   easy_install.initialize_options(self)
+[1.586s] running egg_info
+[1.597s] writing object_detection.egg-info/PKG-INFO
+[1.597s] writing dependency_links to object_detection.egg-info/dependency_links.txt
+[1.597s] writing entry points to object_detection.egg-info/entry_points.txt
+[1.598s] writing requirements to object_detection.egg-info/requires.txt
+[1.598s] writing top-level names to object_detection.egg-info/top_level.txt
+[1.623s] reading manifest file 'object_detection.egg-info/SOURCES.txt'
+[1.624s] writing manifest file 'object_detection.egg-info/SOURCES.txt'
+[1.638s] running build_ext
+[1.638s] Creating /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/python3.10/site-packages/object-detection.egg-link (link to .)
+[1.639s] Installing object_detection_node script to /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/object_detection
+[1.639s] 
+[1.639s] Installed /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection
+[1.639s] running symlink_data
+[1.670s] Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection' returned '0': PYTHONPATH=/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection/build --no-deps symlink_data

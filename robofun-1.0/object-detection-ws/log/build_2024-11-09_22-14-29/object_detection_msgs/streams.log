@@ -1,0 +1,134 @@
+[0.311s] Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs -- -j20 -l20
+[0.388s] [ 10%] Built target object_detection_msgs__rosidl_generator_c
+[0.388s] [ 12%] Built target object_detection_msgs__cpp
+[0.391s] [ 12%] Built target ament_cmake_python_symlink_object_detection_msgs
+[0.427s] [ 23%] Built target object_detection_msgs__rosidl_typesupport_introspection_c
+[0.428s] [ 33%] Built target object_detection_msgs__rosidl_typesupport_c
+[0.429s] [ 43%] Built target object_detection_msgs__rosidl_typesupport_introspection_cpp
+[0.430s] [ 53%] Built target object_detection_msgs__rosidl_typesupport_cpp
+[0.430s] [ 64%] Built target object_detection_msgs__rosidl_typesupport_fastrtps_cpp
+[0.433s] [ 74%] Built target object_detection_msgs__rosidl_typesupport_fastrtps_c
+[0.462s] [ 74%] Built target object_detection_msgs
+[0.495s] [ 76%] Built target object_detection_msgs__py
+[0.532s] [ 84%] Built target object_detection_msgs__rosidl_generator_py
+[0.576s] [ 89%] Built target object_detection_msgs__rosidl_typesupport_introspection_c__pyext
+[0.577s] [ 94%] Built target object_detection_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.578s] [100%] Built target object_detection_msgs__rosidl_typesupport_c__pyext
+[0.760s] running egg_info
+[0.785s] writing object_detection_msgs.egg-info/PKG-INFO
+[0.785s] writing dependency_links to object_detection_msgs.egg-info/dependency_links.txt
+[0.786s] writing top-level names to object_detection_msgs.egg-info/top_level.txt
+[0.856s] reading manifest file 'object_detection_msgs.egg-info/SOURCES.txt'
+[0.858s] writing manifest file 'object_detection_msgs.egg-info/SOURCES.txt'
+[0.901s] [100%] Built target ament_cmake_python_build_object_detection_msgs_egg
+[0.918s] Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs -- -j20 -l20
+[1.058s] Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs
+[1.070s] -- Install configuration: ""
+[1.071s] -- Execute custom install script
+[1.072s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/ament_index/resource_index/rosidl_interfaces/object_detection_msgs
+[1.072s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__functions.h
+[1.072s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__struct.h
+[1.072s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__type_support.h
+[1.073s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__functions.h
+[1.073s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__struct.h
+[1.073s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__type_support.h
+[1.073s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/object.h
+[1.073s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/objects.h
+[1.073s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.074s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/library_path.sh
+[1.074s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/library_path.dsv
+[1.074s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[1.075s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__rosidl_typesupport_fastrtps_c.h
+[1.075s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.075s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.075s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__builder.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__struct.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__traits.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__builder.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__struct.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__traits.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/object.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/objects.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[1.076s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__rosidl_typesupport_fastrtps_cpp.hpp
+[1.077s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.078s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[1.078s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/include/object_detection_msgs/object_detection_msgs/msg/detail/objects__rosidl_typesupport_introspection_cpp.hpp
+[1.078s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/pythonpath.sh
+[1.078s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/pythonpath.dsv
+[1.078s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[1.078s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.079s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.079s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[1.079s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/__init__.py
+[1.079s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/_object_detection_msgs_s.ep.rosidl_typesupport_c.c
+[1.079s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/_object_detection_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.080s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/_object_detection_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.080s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/libobject_detection_msgs__rosidl_generator_py.so
+[1.080s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/__init__.py
+[1.080s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_object.py
+[1.080s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_object_s.c
+[1.080s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_objects.py
+[1.081s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg/_objects_s.c
+[1.081s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.081s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.081s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.081s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.082s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.082s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/object_detection_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.082s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/msg/Object.idl
+[1.082s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/msg/Objects.idl
+[1.083s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/msg/Object.msg
+[1.083s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/msg/Objects.msg
+[1.083s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/ament_index/resource_index/package_run_dependencies/object_detection_msgs
+[1.083s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/ament_index/resource_index/parent_prefix_path/object_detection_msgs
+[1.083s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/ament_prefix_path.sh
+[1.084s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/ament_prefix_path.dsv
+[1.084s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/path.sh
+[1.084s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/environment/path.dsv
+[1.084s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/local_setup.bash
+[1.084s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/local_setup.sh
+[1.084s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/local_setup.zsh
+[1.085s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/local_setup.dsv
+[1.085s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.dsv
+[1.097s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/ament_index/resource_index/packages/object_detection_msgs
+[1.097s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/rosidl_cmake-extras.cmake
+[1.098s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.099s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.099s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.099s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.099s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.099s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.099s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgsConfig.cmake
+[1.099s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgsConfig-version.cmake
+[1.100s] -- Up-to-date symlink: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/package.xml
+[1.100s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_generator_c.so
+[1.103s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_fastrtps_c.so
+[1.104s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_introspection_c.so
+[1.104s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_c.so
+[1.104s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.104s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_introspection_cpp.so
+[1.105s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_typesupport_cpp.so
+[1.179s] Listing '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs'...
+[1.179s] Listing '/home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/local/lib/python3.10/dist-packages/object_detection_msgs/msg'...
+[1.188s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/lib/libobject_detection_msgs__rosidl_generator_py.so
+[1.189s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_cExport.cmake
+[1.189s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.189s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.189s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.190s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.190s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.190s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cExport.cmake
+[1.190s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.191s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_cppExport.cmake
+[1.191s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.191s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.191s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.191s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.192s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cppExport.cmake
+[1.192s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/object_detection_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.193s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_pyExport.cmake
+[1.193s] -- Up-to-date: /home/james/workspace/robofun-1.0/object-detection-ws/install/object_detection_msgs/share/object_detection_msgs/cmake/export_object_detection_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.196s] Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs

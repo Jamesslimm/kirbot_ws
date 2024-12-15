@@ -1,0 +1,1 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolov8_msgs/rosidl_generator_cpp/yolov8_msgs/msg/inference_result.hpp

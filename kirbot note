@@ -1,0 +1,185 @@
+===== Robot namespace =====
+kirbot (Keep It Real bot)
+
+
+
+===== Docker terminal =====
+
+docker exec -it amr.platform.scuttle bash
+source install/setup.bash
+source /opt/ros/humble/setup.bash
+
+
+
+===== CARTOGRAPHER =====
+# Ensure/Export ros domain id of docker same as device.
+
+1. Cartographer node
+ros2 run cartographer_ros cartographer_node -configuration_directory /home/$USER/workspace/robofun-1.0/platform/scuttle/ROS2/src/generic_robot_driver/config -configuration_basename cartographer.lua --ros-args -p use_sim_time:=false -r odom:=odom/amr -r /constraint_list:=constraint_list -r /parameter_events:=parameter_events -r /rosout:=rosout -r /scan:=scan -r /scan_matched_points2:=scan_matched_points2 -r /submap_list:=submap_list -r /tf:=tf -r /tf_static:=tf_static -r /trajectory_node_list:=trajectory_node_list -r __ns:=/kirbot
+
+2. Occupancy grid node
+ros2 run cartographer_ros cartographer_occupancy_grid_node -resolution 0.05 -publish_period_sec 1.0 --ros-args -p use_sim_time:=false -r /map:=map -r /submap_list:=submap_list -r __ns:=/kirbot
+
+
+3. RVIZ
+rviz2 --ros-args -r __ns:=/kirbot -r /tf:=tf -r /tf_static:=tf_static -r /clicked_point:=clicked_point -r /goal_pose:=goal_pose -r /initialpose:=initialpose
+
+
+4. Save map
+ros2 run nav2_map_server map_saver_cli -f /home/$USER/workspace/robofun-1.0/my_map --ros-args -p free_thresh_default:=0.196 -r /map:=map -r __ns:=/kirbot
+
+
+
+===== Localization and Navigation =====
+# Go through the slides and change settings that are needed.
+
+1.
+rviz2 --ros-args -r __ns:=/kirbot -r /tf:=tf -r /tf_static:=tf_static -r /clicked_point:=clicked_point -r /goal_pose:=goal_pose -r /initialpose:=initialpose
+
+change fixed frame to "map"
+add map topic "/kirbot/map"
+
+2.
+ros2 launch nav2_bringup bringup_launch.py params_file:=/home/$USER/workspace/robofun-1.0/platform/scuttle/ROS2/src/generic_robot_driver/config/nav2_eiforamr_params.yml map:=/home/$USER/workspace/robofun-1.0/my_map.yaml use_sim_time:=false namespace:=/kirbot use_namespace:=True
+
+3. Follow waypoint
+ros2 run follow_waypoints follow_waypoints_exe --ros-args --remap __ns:=/kirbot --remap /amcl/get_states:=/kirbot/amcl/get_states
+
+ros2 run follow_waypoints follow_waypoints_uwb --ros-args --remap __ns:=/kirbot --remap /amcl/get_states:=/kirbot/amcl/get_states
+
+===== RTAB =====
+1.
+ros2 run rtabmap_slam rtabmap --ros-args -r odom:=odom/amr -r rgb/image:=camera/color/image_raw -r depth/image:=camera/aligned_depth_to_color/image_raw -r rgb/camera_info:=camera/color/camera_info -r odom:=odom/amr -r /tf:=tf -r /tf_static:=tf_static -r __ns:=/kirbot
+
+2.
+rviz2 --ros-args -r __ns:=/kirbot -r /tf:=tf -r /tf_static:=tf_static -r /clicked_point:=clicked_point -r /goal_pose:=goal_pose -r /initialpose:=initialpose
+
+
+
+===== Fast mapping =====
+# RTAB 1. and 2. needs to be runnning
+
+1.
+ros2 run fast_mapping fast_mapping_node --ros-args -r /camera/aligned_depth_to_color/camera_info:=camera/aligned_depth_to_color/camera_info -r /camera/aligned_depth_to_color/image_raw:=camera/aligned_depth_to_color/image_raw -r /camera_left/aligned_depth_to_color/image_raw:=camera_left/aligned_depth_to_color/image_raw -r /camera_rear/aligned_depth_to_color/image_raw:=camera_rear/aligned_depth_to_color/image_raw -r /camera_right/aligned_depth_to_color/image_raw:=camera_right/aligned_depth_to_color/image_raw -r /tf:=tf -r /tf_static:=tf_static -r /world/fused_map:=world/fused_map -r /world/map:=world/map -r /world/occupancy:=world/occupancy -r __ns:=/kirbot
+
+
+
+===== Object detection =====
+# Set up following the slides
+# Ensure docker is up
+# Export ros domain id in every terminal
+
+cd ~/workspace/robofun-1.0/object-detection-ws
+colcon build --symlink-install
+source install/setup.bash
+export ROS_DOMAIN_ID=10
+
+1.
+ros2 run object_detection object_detection_node --ros-args -r __ns:=/kirbot
+
+ros2 run yolobot_recognition yolov8_ros2_pt.py
+
+2.
+Visualize in rviz
+
+
+
+===== Node-red =====
+ssh -L 1880:localhost:1880 amr01@172.20.10.4
+node-red
+
+cd ~/workspace/robofun-1.0/object-detection-ws
+source install/setup.bash
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+ros2 run scuttle_mqtt mqtt_image_publisher -r __ns:=/kirbot
+
+===== ROSBOARD =====
+# Robot ip = 172.17.0.1
+# ROSBoard = http://172.17.0.1:8888/
+
+1.
+ros2 run rosboard rosboard_node
+
+------------------------------------------------------------------------------------------------------------------
+=== i2c Setup ===
+cd ~/workspace/robofun-1.0/platform/scuttle/driver/
+sudo ./flash.sh 
+(Plug and unplug i2c)
+
+sudo i2cdetect -l
+(If the i2c id for the one with tiny usb)
+
+sudo chmod 777 /dev/i2c-<i2c_bus_id>
+sudo i2cdetect -r -y <i2c_bus_id>
+
+
+=== Docker ===
+cd ~/workspace/robofun-1.0/platform/scuttle/standalone
+docker compose -f docker-compose.yml up
+
+gedit docker-compose.yml
+(To edit docker file, currently ros domain = 10, robot namespace = kirbot)
+
+docker compose -f docker-compose.yml build
+(To build docker if any changes is made)
+
+docker compose -f docker-compose.yml up
+(Run docker)
+
+docker compose -f docker-compose.yml down
+(Close docker or ctrl - C)
+
+
+=== Check docker domain id === *
+docker exec -it amr.platform.scuttle bash
+(Open docker terminal)
+
+env | grep ROS
+export ROS_DOMAIN_ID=<ROBOT_DOMAIN_ID>
+(If ros domain id is wrong initially)
+
+	
+
+
+
+ros2 topic pub /mode std_msgs/msg/Int8 "{data: 4}"
+ros2 topic pub /kirbot/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

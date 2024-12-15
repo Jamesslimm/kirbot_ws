@@ -1,0 +1,50 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from object_detection_msgs/msg/Object.msg
+// generated code does not contain a copyright notice
+
+
+module object_detection_msgs {
+  module msg {
+    struct Object {
+      @verbatim (language="comment", text=
+        "class id")
+      int16 class_id;
+
+      @verbatim (language="comment", text=
+        "track id")
+      int16 id;
+
+      @verbatim (language="comment", text=
+        "object class")
+      string label;
+
+      @verbatim (language="comment", text=
+        "confidence of result")
+      float confidence;
+
+      @verbatim (language="comment", text=
+        "normalized value of box top-left point coordinate x")
+      float x;
+
+      @verbatim (language="comment", text=
+        "normalized value of box top-left point coordinate y")
+      float y;
+
+      @verbatim (language="comment", text=
+        "normalized value of box height")
+      float height;
+
+      @verbatim (language="comment", text=
+        "normalized value of box width")
+      float width;
+
+      @verbatim (language="comment", text=
+        "normalized velocity of box top-left point coordinate x")
+      float vel_x;
+
+      @verbatim (language="comment", text=
+        "normalized velocity of box top-left point coordinate y")
+      float vel_y;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/build/object_detection_msgs/rosidl_generator_c/object_detection_msgs/msg/detail/objects__struct.h

@@ -1,0 +1,56 @@
+[0.307s] Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake /home/james/workspace/robofun-1.0/object-detection-ws/src/yolobot_recognition -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition
+[0.442s] -- The C compiler identification is GNU 11.4.0
+[0.548s] -- The CXX compiler identification is GNU 11.4.0
+[0.564s] -- Detecting C compiler ABI info
+[0.635s] -- Detecting C compiler ABI info - done
+[0.644s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.645s] -- Detecting C compile features
+[0.645s] -- Detecting C compile features - done
+[0.648s] -- Detecting CXX compiler ABI info
+[0.728s] -- Detecting CXX compiler ABI info - done
+[0.736s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.736s] -- Detecting CXX compile features
+[0.736s] -- Detecting CXX compile features - done
+[0.741s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.133s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.202s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.245s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.340s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.342s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.343s] -- Added test 'lint_cmake' to check CMake code style
+[1.343s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.345s] -- Added test 'xmllint' to check XML markup files
+[1.347s] -- Configuring done
+[1.349s] -- Generating done
+[1.349s] -- Build files have been written to: /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition
+[1.354s] Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake /home/james/workspace/robofun-1.0/object-detection-ws/src/yolobot_recognition -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition
+[1.357s] Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition -- -j20 -l20
+[1.398s] Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --build /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition -- -j20 -l20
+[1.438s] Invoking command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition
+[1.448s] -- Install configuration: ""
+[1.449s] -- Execute custom install script
+[1.450s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.dockerignore
+[1.461s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitattributes
+[1.471s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition//scripts/.gitignore
+[1.480s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8_ros2_pt.py
+[1.493s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition//scripts/yolov8_ros2_subscriber.py
+[1.502s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition//launch/launch_yolov8.launch.py
+[1.511s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib/yolobot_recognition/yolov8_ros2_pt.py
+[1.518s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib/yolobot_recognition/yolov8_ros2_subscriber.py
+[1.528s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/lib/yolobot_recognition/launch_yolov8.launch.py
+[1.536s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/ament_index/resource_index/package_run_dependencies/yolobot_recognition
+[1.543s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/ament_index/resource_index/parent_prefix_path/yolobot_recognition
+[1.555s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.sh
+[1.564s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.dsv
+[1.571s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/environment/path.sh
+[1.579s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/environment/path.dsv
+[1.586s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.bash
+[1.593s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.sh
+[1.603s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.zsh
+[1.611s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/local_setup.dsv
+[1.619s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.dsv
+[1.626s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/ament_index/resource_index/packages/yolobot_recognition
+[1.635s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig.cmake
+[1.644s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig-version.cmake
+[1.652s] -- Symlinking: /home/james/workspace/robofun-1.0/object-detection-ws/install/yolobot_recognition/share/yolobot_recognition/package.xml
+[1.661s] Invoked command in '/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/james/turtlebot3_ws/install/turtlebot3_teleop:/home/james/turtlebot3_ws/install/turtlebot3_example:/home/james/turtlebot3_ws/install/follow_waypoints:/opt/ros/humble /usr/bin/cmake --install /home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition

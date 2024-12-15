@@ -1,0 +1,539 @@
+#include "boards.h"
+#include <WiFi.h>
+#include "time.h"
+#include <Arduino.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
+
+#include <SPI.h>
+#include <LoRa.h>
+
+const int csPin = 5;       // LoRa radio chip select
+const int resetPin = 14;   // LoRa radio reset
+const int irqPin = 26;     // LoRa radio interrupt
+
+float currentTime = 0;
+float startTime = 0;
+float runTime = 0;
+float runTimeInMinutes = 0;
+
+
+/// GPIO pin definitions
+#define STRAW_HAT_LED_RELAY_PIN 25
+#define LDR_PIN 21
+#define DS18B20_PIN 33
+#define RELAY_BUZZER_PIN 12
+#define VOLTAGE_SENSOR_PIN 32
+
+// Thresholds
+#define TEMPERATURE_THRESHOLD 55.0
+#define BATTERY_LOW_THRESHOLD 12.5
+#define BATTERY_MEDIUM_THRESHOLD 12.8
+#define BATTERY_HIGH_THRESHOLD 13.5
+
+// Calibration parameters for voltage sensor
+#define CALIBRATION_SLOPE 0.0025      // Slope (m) from calibration
+#define CALIBRATION_INTERCEPT 9   // Intercept (c) from calibration
+#define VOLTAGE_SENSOR_OFFSET 20      // Relay action affect analog reading
+#define CALLCOUNT_ITERATION 5       // Number of readings before update
+
+#define MQ2_1                    (36)     // Define which analog input channel
+#define MQ2_2                    (39)     // Define which analog input channel
+#define MQ8_1                    (34)     // Define which analog input channel
+#define MQ8_2                    (35)     // Define which analog input channel
+
+// Define different load resistances for each sensor (in kilo-ohms)
+#define RL_VALUE_MQ2_1           (4)      
+#define RL_VALUE_MQ2_2           (4)      
+#define RL_VALUE_MQ8_1           (8)      
+#define RL_VALUE_MQ8_2           (8) 
+
+#define MQ2_RO_CLEAN_AIR_FACTOR          (9.83)   // Ro in clean air factor
+#define MQ8_RO_CLEAN_AIR_FACTOR          (9.21) 
+
+#define CALIBRATION_SAMPLE_TIMES      (20)     // Number of samples for calibration
+#define CALIBRATION_SAMPLE_INTERVAL   (500)   // Time interval between samples in milliseconds
+#define READ_SAMPLE_INTERVAL          (50)    // Time interval between samples in normal operation
+#define READ_SAMPLE_TIMES             (5)     // Number of samples in normal operation
+
+
+#define GAS_CO                        (0)
+#define GAS_SMOKE                     (1)
+#define GAS_H2                        (2)
+
+// unsigned long stopTime = 0;
+// unsigned long currentTime = 0;
+// unsigned long startTime = 0;
+// unsigned long runTime = 0;
+// unsigned long calRunTime = 0;
+// unsigned long offTime = 0;
+// unsigned long remainTime = 0;
+
+float   COCurve[3]  =  {2.3,0.72,-0.34};
+float   SmokeCurve[3] = {2.3,0.53,-0.44};
+float   H2Curve[3]  =  {2.3, 0.93,-1.44};
+
+float Ro_MQ2_1 = 10; // Initial Ro value for MQ2_1
+float Ro_MQ2_2 = 10; // Initial Ro value for MQ2_2
+float Ro_MQ8_1 = 10; // Initial Ro value for MQ8_1
+float Ro_MQ8_2 = 10; // Initial Ro value for MQ8_2
+
+float avgCOConcentration;
+float avgSmokeConcentration;
+float avgH2Concentration;
+
+float avgCO = 0;
+float avgSmoke = 0;
+float avgH2 = 0;
+
+float CO_1 = 0;
+float Smoke_1 = 0;
+float H2_1 = 0;
+float CO_2 = 0;
+float Smoke_2 = 0;
+float H2_2 = 0;
+
+const int GAS_TYPES_COUNT = 3; // Number of gas types
+
+// Timing variables
+unsigned long previousMillis = 0;
+unsigned long currentMillis;
+const long interval = 500;  // 0.5-second interval
+int loopCount = 0;  // Counter for overheat toggling
+
+// Variables
+float currentTemperature;
+bool ldrLED;
+bool isLdrBright;
+float batteryPercentage = 0;
+float batteryPercentageSum = 0.0; // Sum of battery percentage readings
+float batteryPercentageRaw = 0;
+int callCountBattery = 0;         // how many times the function is called
+bool buzzerState = false;
+bool relayState = false;
+
+// Sensor objects
+OneWire oneWire(DS18B20_PIN);
+DallasTemperature tempSensor(&oneWire);
+
+// Variable to save current epoch time
+unsigned long epochTime; 
+
+const char* ssid = "Thomas";
+const char* password = "honhonhon123";
+
+// NTP server to request epoch time
+const char* ntpServer = "pool.ntp.org";
+
+
+// Flag for rescue mode
+bool rescueMode = false; 
+int rescueModeCtr = 0;
+int rescueModeLora = 2;   // patrol mode 2; rescue mode 3
+
+
+// Function that gets current epoch time
+unsigned long getTime() {
+  time_t now;
+  struct tm timeinfo;
+  if (!getLocalTime(&timeinfo)) {
+    //Serial.println("Failed to obtain time");
+    return(0);
+  }
+  // Serial.println(&timeinfo, "%A, %B %d %Y %H:%M:%S");
+  time(&now);
+  return now;
+}
+
+// Function to format time into dd-mm-yyyy
+String formatDate(const time_t& time) {
+  char buffer[20];  // Buffer to hold the formatted date
+  struct tm * timeinfo = localtime(&time);
+  strftime(buffer, sizeof(buffer), "%H:%M:%S", timeinfo);
+  return String(buffer);
+}
+
+// Initialize WiFi
+void initWiFi() {
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting to WiFi ..");
+  while (WiFi.status() != WL_CONNECTED) {
+    Serial.print('.');
+    delay(1000);
+  }
+  Serial.println(WiFi.localIP());
+}
+
+void setup()
+{
+  Serial.begin(115200);
+  delay(100);
+  pinMode(STRAW_HAT_LED_RELAY_PIN, OUTPUT);
+  pinMode(RELAY_BUZZER_PIN, OUTPUT);
+  pinMode(LDR_PIN, INPUT);
+
+  Serial.println("LoRa Sender");
+  LoRa.setPins(csPin, resetPin, irqPin);
+  //LoRa.setPins(RADIO_CS_PIN, RADIO_RST_PIN, RADIO_DIO0_PIN);
+  if (!LoRa.begin(433E6)) {
+      Serial.println("Starting LoRa failed!");
+      while (1);
+  }
+  Serial.println("LoRa Initialized Successfully!");
+  
+  tempSensor.begin();
+
+  analogReadResolution(10);
+  
+  // initBoard();
+  // initWiFi();
+    // When the power is turned on, a delay is required.
+  calibrateSensor("MQ2_1", MQ2_1, MQ2_RO_CLEAN_AIR_FACTOR, RL_VALUE_MQ2_1, Ro_MQ2_1);
+  calibrateSensor("MQ2_2", MQ2_2, MQ2_RO_CLEAN_AIR_FACTOR, RL_VALUE_MQ2_2, Ro_MQ2_2);
+  calibrateSensor("MQ8_1", MQ8_1, MQ8_RO_CLEAN_AIR_FACTOR, RL_VALUE_MQ8_1, Ro_MQ8_1);
+  calibrateSensor("MQ8_2", MQ8_2, MQ8_RO_CLEAN_AIR_FACTOR, RL_VALUE_MQ8_2, Ro_MQ8_2);
+
+  delay(500);
+  
+  configTime(28800, 0, ntpServer);
+
+}
+
+void loop()
+{
+  if (rescueMode){
+    if (rescueModeCtr > 0)
+      rescueModeCtr = rescueModeCtr - 1;
+    else{
+        rescueMode = false;
+    }
+  }
+  Serial.println("Start of loop");
+  int gasTypesMQ2[] = {GAS_CO, GAS_SMOKE, -1};
+  int gasTypesMQ8[] = {-1, -1, GAS_H2};
+  Serial.println("Sending packet: ");
+
+  // //Timestamp
+  // epochTime = getTime();
+
+  // String time = formatDate(epochTime);
+
+  currentMillis = millis();
+
+  // If it's been longer then 1000ms since we took a measurement, take one now!
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+
+    currentTime = millis();
+    runTime = runTime + currentTime - startTime;
+    startTime = currentTime; 
+
+    runTimeInMinutes = runTime / 60000.0;
+    char runTimeMessage[100];
+    sprintf(runTimeMessage, "Run Time: %.2f\n", runTimeInMinutes);  
+    Serial.print(runTimeMessage);
+
+    // Print table header
+    Serial.println("Sensor     | CO (ppm)  | SMOKE (ppm) | H2 (ppm)");
+    Serial.println("----------------------------------------------------------");
+
+    // Define gas types for each sensor
+    int gasTypesMQ2[] = {GAS_CO, GAS_SMOKE, -1};
+    int gasTypesMQ8[] = {-1, -1, GAS_H2}; 
+
+    int coConcentrationMQ2_1 = MQGetGasPercentage(MQRead(MQ2_1, RL_VALUE_MQ2_1) / Ro_MQ2_1, GAS_CO);
+    int coConcentrationMQ2_2 = MQGetGasPercentage(MQRead(MQ2_2, RL_VALUE_MQ2_2) / Ro_MQ2_2, GAS_CO);
+    int smokeConcentrationMQ2_1 = MQGetGasPercentage(MQRead(MQ2_1, RL_VALUE_MQ2_1) / Ro_MQ2_1, GAS_SMOKE);
+    int smokeConcentrationMQ2_2 = MQGetGasPercentage(MQRead(MQ2_2, RL_VALUE_MQ2_2) / Ro_MQ2_2, GAS_SMOKE);
+    int h2ConcentrationMQ8_1 = MQGetGasPercentage(MQRead(MQ8_1, RL_VALUE_MQ8_1) / Ro_MQ8_1, GAS_H2);
+    int h2ConcentrationMQ8_2 = MQGetGasPercentage(MQRead(MQ8_2, RL_VALUE_MQ8_2) / Ro_MQ8_2, GAS_H2);
+
+    float avgCOConcentration = (coConcentrationMQ2_1 + coConcentrationMQ2_2) / 2.0;
+    float avgSmokeConcentration = (smokeConcentrationMQ2_1 + smokeConcentrationMQ2_2) / 2.0;
+    float avgH2Concentration = (h2ConcentrationMQ8_1 + h2ConcentrationMQ8_2) / 2.0;
+    if (avgCOConcentration > 5 || avgSmokeConcentration > 5 || avgH2Concentration > 50) {
+      rescueMode = true;
+      rescueModeCtr = 5;
+    }
+    if (rescueMode) {
+        rescueModeLora = 3;
+    } else {
+        rescueModeLora = 2;
+    }
+
+    printSensorData("MQ2_1", MQ2_1, gasTypesMQ2, RL_VALUE_MQ2_1, Ro_MQ2_1);
+    printSensorData("MQ2_2", MQ2_2, gasTypesMQ2, RL_VALUE_MQ2_2, Ro_MQ2_2);
+    printSensorData("MQ8_1", MQ8_1, gasTypesMQ8, RL_VALUE_MQ8_1, Ro_MQ8_1);
+    printSensorData("MQ8_2", MQ8_2, gasTypesMQ8, RL_VALUE_MQ8_2, Ro_MQ8_2);
+
+    avgCO = avgCOConcentration;
+    avgSmoke = avgSmokeConcentration;
+    avgH2 = avgH2Concentration;
+
+    CO_1 = coConcentrationMQ2_1;
+    Smoke_1 = smokeConcentrationMQ2_1;
+    H2_1 = h2ConcentrationMQ8_1;
+    CO_2 = coConcentrationMQ2_2;
+    Smoke_2 = smokeConcentrationMQ2_2;
+    H2_2 = h2ConcentrationMQ8_2;
+    
+    isLdrBright = digitalRead(LDR_PIN) == LOW;  // 1: ambient bright
+    tempSensor.requestTemperatures();
+    currentTemperature = tempSensor.getTempCByIndex(0);
+    handleBuzzerAndLed();
+    updateBatteryLevel();
+
+    Serial.print("Temperature: ");
+    Serial.print(currentTemperature);
+    Serial.print(" °C, LDR Darkness: ");
+    Serial.print(isLdrBright ? "No" : "Yes");
+    Serial.print(", Battery Level: ");
+    Serial.print(batteryPercentage);
+    Serial.print("%, Emergency Mode: ");
+    Serial.println(rescueMode ? 1 : 0);
+
+    //Print Rescue Mode status
+    Serial.print("Rescue Mode: ");
+    Serial.println(rescueMode ? "Activated" : "Not Activated");
+    Serial.println(); // Newline for readability
+
+    char message[250];
+    Serial.println("LoRa Sending");
+    sprintf(message,"C1,%.2f;C2,%.2f;S1,%.2f;S2,%.2f;H1,%.2f;H2,%.2f;TP,%.2f;L,%d;E,%d;B,%.2f;RT,%.2f", CO_1, CO_2,Smoke_1,Smoke_2,H2_1,H2_2,currentTemperature,isLdrBright ? 0 : 1,rescueModeLora,batteryPercentage,runTimeInMinutes);
+    Serial.println(message);
+
+    
+    // Send packet
+    LoRa.beginPacket();
+    LoRa.print(message);
+    LoRa.endPacket();
+
+    
+    Serial.print(message);
+    Serial.println();
+
+    if (u8g2) {
+        u8g2->clearBuffer();
+        u8g2->drawStr(0, 15, "package sent");
+        // u8g2->drawStr(0,30, message1);
+        u8g2->sendBuffer();
+    }
+  }
+}
+
+
+
+//////////////////Functions (JY & ZJ)/////////////////////////////////////////
+void calibrateSensor(const char* sensorName, int sensorPin, float cleanAirFactor, float rlValue, float &Ro) {
+  delay(1000); // Delay between readings
+  Serial.print("Calibrating ");
+  Serial.print(sensorName);
+  Serial.print("...\n");
+
+  Ro = MQCalibration(sensorPin, cleanAirFactor, rlValue); // Calibrating the sensor in clean air
+
+  Serial.print(sensorName);
+  Serial.print(" Calibration is done...\n");
+  Serial.print(sensorName);
+  Serial.print(" Ro=");
+  Serial.print(Ro);
+  Serial.print(" kohm\n");
+}
+
+
+
+void printSensorData(const char* sensorName, int sensorPin, int gasTypes[GAS_TYPES_COUNT], float rlValue, float Ro) {
+  Serial.print(sensorName);
+  Serial.print("    | ");
+
+  for (int i = 0; i < GAS_TYPES_COUNT; i++) {
+    if (gasTypes[i] != -1) {
+      int gasReading = MQRead(sensorPin, rlValue);
+      if (gasReading >= 0) {
+        Serial.print(MQGetGasPercentage(gasReading / Ro, gasTypes[i]));
+      } else {
+        Serial.print("Error   ");
+      }
+      Serial.print("     | ");
+    } else {
+      Serial.print("N/A      | ");
+    }
+  }
+  Serial.println();
+}
+
+/****************** MQResistanceCalculation ****************************************
+Input:   raw_adc - raw value read from adc, which represents the voltage
+Output:  the calculated sensor resistance
+Remarks: The sensor and the load resistor forms a voltage divider. Given the voltage
+         across the load resistor and its resistance, the resistance of the sensor
+         could be derived.
+************************************************************************************/ 
+float MQResistanceCalculation(int raw_adc, float rlValue) 
+{
+  return ((float)rlValue * (4095 - raw_adc) / raw_adc);
+}
+ 
+/***************************** MQCalibration ****************************************
+Input:   mq_pin - analog channel
+Output:  Ro of the sensor
+Remarks: This function assumes that the sensor is in clean air. It use  
+         MQResistanceCalculation to calculates the sensor resistance in clean air 
+         and then divides it with RO_CLEAN_AIR_FACTOR. RO_CLEAN_AIR_FACTOR is about 
+         10, which differs slightly between different sensors.
+************************************************************************************/ 
+float MQCalibration(int sensorPin, float cleanAirFactor, float rlValue) 
+{
+  int i;
+  float val = 0;
+
+  for (i = 0; i < CALIBRATION_SAMPLE_TIMES; i++) {
+    val += MQResistanceCalculation(analogRead(sensorPin), rlValue);
+    delay(CALIBRATION_SAMPLE_INTERVAL);
+  }
+  val = val / CALIBRATION_SAMPLE_TIMES;
+  return val / cleanAirFactor;
+}
+/*****************************  MQRead *********************************************
+Input:   sensorPin - analog channel
+Output:  Rs of the sensor
+Remarks: This function use MQResistanceCalculation to caculate the sensor resistenc (Rs).
+         The Rs changes as the sensor is in the different consentration of the target
+         gas. The sample times and the time interval between samples could be configured
+         by changing the definition of the macros.
+************************************************************************************/ 
+float MQRead(int sensorPin, float rlValue) 
+{
+  int i;
+  float rs = 0;
+
+  for (i = 0; i < READ_SAMPLE_TIMES; i++) {
+    rs += MQResistanceCalculation(analogRead(sensorPin), rlValue);
+    delay(READ_SAMPLE_INTERVAL);
+  }
+  return rs / READ_SAMPLE_TIMES;
+}
+ 
+/*****************************  MQGetGasPercentage **********************************
+Input:   rs_ro_ratio - Rs divided by Ro
+         gas_id      - target gas type
+Output:  ppm of the target gas
+Remarks: This function passes different curves to the MQGetPercentage function which 
+         calculates the ppm (parts per million) of the target gas.
+************************************************************************************/ 
+int MQGetGasPercentage(float rs_ro_ratio, int gas_id) 
+{
+  if (gas_id == GAS_CO) {
+    return MQGetPercentage(rs_ro_ratio, COCurve);
+  } else if (gas_id == GAS_SMOKE) {
+    return MQGetPercentage(rs_ro_ratio, SmokeCurve);
+  } else if (gas_id == GAS_H2) {
+    return MQGetPercentage(rs_ro_ratio, H2Curve);
+  }
+  return 0;
+}
+ 
+/*****************************  MQGetPercentage **********************************
+Input:   rs_ro_ratio - Rs divided by Ro
+         pcurve      - pointer to the curve of the target gas
+Output:  ppm of the target gas
+Remarks: By using the slope and a point of the line. The x(logarithmic value of ppm) 
+         of the line could be derived if y(rs_ro_ratio) is provided. As it is a 
+         logarithmic coordinate, power of 10 is used to convert the result to non-logarithmic 
+         value.
+************************************************************************************/ 
+int MQGetPercentage(float rs_ro_ratio, float *pcurve) 
+{
+  return (pow(10, (((log(rs_ro_ratio) - pcurve[1]) / pcurve[2]) + pcurve[0])));
+}
+
+void handleBuzzerAndLed() {
+  if (rescueMode) {
+    // Emergency Mode: Toggle buzzer and LED rapidly
+    buzzerState = !buzzerState; // Toggle buzzer state
+    digitalWrite(RELAY_BUZZER_PIN, buzzerState ? HIGH : LOW);
+    digitalWrite(STRAW_HAT_LED_RELAY_PIN, buzzerState ? HIGH : LOW);
+  } 
+  else if (currentTemperature > TEMPERATURE_THRESHOLD) {
+    // Overheat Mode: Toggle buzzer and LED at a slower rate
+    loopCount++; // Increment loop counter
+    if (loopCount % 2 == 0) { // Toggle every 2nd loop cycle
+      buzzerState = !buzzerState; // Toggle buzzer state
+      digitalWrite(RELAY_BUZZER_PIN, buzzerState ? HIGH : LOW);
+      digitalWrite(STRAW_HAT_LED_RELAY_PIN, buzzerState ? HIGH : LOW);
+    }
+  } 
+  else {
+    // Normal Mode: Manage LED based on LDR state
+    if (ldrLED == isLdrBright) {
+      ldrLED = !isLdrBright; // Invert LED state if it matches LDR brightness
+      digitalWrite(STRAW_HAT_LED_RELAY_PIN, ldrLED);
+    }
+
+    // Turn off buzzer and manage relay and LED based on brightness
+    if (buzzerState == true)
+      digitalWrite(RELAY_BUZZER_PIN, LOW);
+
+    if (ldrLED)
+      relayState = true; // relay activated indicator (offset voltage reading)
+    else 
+      relayState = false;
+
+    buzzerState = false; // Ensure buzzer is off
+    loopCount = 0; // Reset loop counter
+  }
+
+  // Ensure relayState aligns with buzzer state in alert conditions
+  if (buzzerState) {
+    relayState = true;
+  }
+}
+
+// Custom mapping function for floating-point values
+float mapFloat(float x, float in_min, float in_max, float out_min, float out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+void updateBatteryLevel() {
+  int rawADC = analogRead(VOLTAGE_SENSOR_PIN);
+  if (relayState)
+    rawADC = rawADC + VOLTAGE_SENSOR_OFFSET; // Offset for activated state
+  
+  // Calculate the voltage using the calibrated formula
+  float voltage = (CALIBRATION_SLOPE * rawADC) + CALIBRATION_INTERCEPT;
+  Serial.print("voltage sensor analog reading: ");
+  Serial.println(rawADC);
+  Serial.print("derived voltage (V): ");
+  Serial.println(voltage);
+
+  // Update battery percentage based on voltage thresholds
+  if (voltage >= BATTERY_HIGH_THRESHOLD) {
+    batteryPercentageRaw = 100.0;
+  } else if (voltage >= BATTERY_MEDIUM_THRESHOLD) {
+    batteryPercentageRaw = mapFloat(voltage, BATTERY_MEDIUM_THRESHOLD, BATTERY_HIGH_THRESHOLD, 50.0, 100.0);
+  } else if (voltage >= BATTERY_LOW_THRESHOLD) {
+    batteryPercentageRaw = mapFloat(voltage, BATTERY_LOW_THRESHOLD, BATTERY_MEDIUM_THRESHOLD, 0.0, 50.0);
+  } else {
+    batteryPercentageRaw = 0.0;
+  }
+
+  // Add the calculated battery percentage to the sum
+  batteryPercentageSum += batteryPercentageRaw;
+  callCountBattery++;
+
+  // Print battery percentage for every iteration
+  Serial.print("Current battery percentage: ");
+  Serial.println(batteryPercentageRaw);
+
+  // If the function has been called 5 times, calculate and output the average battery percentage and reset
+  if (callCountBattery >= CALLCOUNT_ITERATION) {
+    batteryPercentage = batteryPercentageSum / CALLCOUNT_ITERATION;  
+    // Calculate the average battery percentage
+    // Reset the sum and call count for the next set of 5 calls
+    batteryPercentageSum = 0.0;
+    callCountBattery = 0;
+  }
+}
+
+

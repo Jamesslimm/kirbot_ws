@@ -1,0 +1,9 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/uninstall.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/yolobot_recognition_uninstall.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/test.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/edit_cache.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/rebuild_cache.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/list_install_components.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/install.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/install/local.dir
+/home/james/workspace/robofun-1.0/object-detection-ws/build/yolobot_recognition/CMakeFiles/install/strip.dir

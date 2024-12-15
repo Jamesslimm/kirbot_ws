@@ -1,0 +1,1 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/src/object_detection_msgs/msg/Object.msg

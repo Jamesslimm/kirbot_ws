@@ -1,0 +1,1 @@
+/home/james/workspace/robofun-1.0/object-detection-ws/src/yolobot_recognition/scripts/yolov8_ros2_pt.py
